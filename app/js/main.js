@@ -4,7 +4,8 @@ $(function () {
         slidesToScroll: 1,
         appendArrows: '.slider__arrows',
         prevArrow: '<button  type="button" class="slick-next"></button>',
-        nextArrow: '<button type="button" class="slick-prev"></button>'
+        nextArrow: '<button type="button" class="slick-prev"></button>',
+        
     });
 
     const menuLink = document.querySelectorAll('.menu-bottom__list-item');
@@ -23,6 +24,32 @@ $(function () {
         appendArrows: '.slider__block-arrows',
         arrows:true,
         prevArrow: '<button  type="button" class="slick-next"></button>',
-        nextArrow: '<button type="button" class="slick-prev"></button>'
+        nextArrow: '<button type="button" class="slick-prev"></button>',
+        responsive: [
+            {
+              breakpoint: 1054,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     })
 })
