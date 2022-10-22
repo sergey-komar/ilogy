@@ -91,6 +91,9 @@
     line-height: 15px;
     color: #595959;
 }
+.menu-bottom__list-link.active{
+    color: #00A911;
+}
 .menu-bottom__overflow{
     position: absolute;
     width: 100%;
@@ -104,7 +107,6 @@
 
 .menu-bottom__title{
     width: 347px;
-    margin-left: 19%;
     margin-bottom: 30px;
     margin-top: 50px;
     font-weight: 600;
@@ -112,21 +114,26 @@
     line-height: 32px;
     color: #000000;
 }
-.menu-bottom__overflow > ul > li{
+.menu-bottom__overflow .container > ul > li{
     width: 347px;
     margin-bottom: 20px;
 }
-.menu-bottom__overflow > ul{
+.menu-bottom__overflow > .container > ul{
     display: flex;
     flex-wrap: wrap;
     width: 900px;
-    margin-left: 17%;
+    padding-left: 0;
 }
-.menu-bottom__overflow > ul > li > a{
+.menu-bottom__overflow .container > ul > li > a{
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #1D1D1D;
+}
+.menu-img{
+    position: absolute;
+    right: 15%;
+    top: 0;
 }
 .hide{
     display: none;
