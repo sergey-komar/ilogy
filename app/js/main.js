@@ -15,4 +15,14 @@ $(function () {
             menuOverflow.classList.toggle('hide');
         })
     })
+
+
+    $('.page-reviews__slider').slick({
+        slidesToShow: 3,
+         slidesToScroll: 1,
+        appendArrows: '.slider__block-arrows',
+        arrows:true,
+        prevArrow: '<button  type="button" class="slick-next"></button>',
+        nextArrow: '<button type="button" class="slick-prev"></button>'
+    })
 })

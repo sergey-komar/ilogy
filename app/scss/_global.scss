@@ -31,3 +31,37 @@ a{
 li{
 	list-style: none;
 }
+.breadcrumbs {
+	padding-top: 32px;
+	margin-bottom: 24px;
+}
+.breadcrumbs__list {
+	display: flex;
+}
+.breadcrumbs__list-item {
+	position: relative;
+	color: #00A911;;
+}
+.breadcrumbs__list-item + .breadcrumbs__list-item{
+	margin-left: 40px;
+}
+.breadcrumbs__list-item::after{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: url('../images/page/arrows-breadcrumbs.svg') no-repeat;
+	top: 11px;
+	right: -30px;
+}
+
+.breadcrumbs__list-link {
+	font-size: 16px;
+	line-height: 173.9%;
+}
+.breadcrumbs__list-item:last-child{
+	color: #AAAAAA;
+}
+.breadcrumbs__list-item:last-child::after{
+	display: none;
+}

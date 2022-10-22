@@ -1,0 +1,155 @@
+.reviews__title{
+    margin-bottom: 37px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 26px;
+    text-align: center;
+    color: #191919;
+}
+.reviews__title-top{
+    margin-bottom: 73px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 26px;
+    color: #191919;
+}
+.reviews__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reviews__item {
+    width: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px 25px 50px 25px;
+    background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    transition: all .3s ease-in;
+}
+.reviews__item:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: all .3s ease-in;
+}
+.reviews__img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.reviews__title {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2F2F2F;
+}
+.reviews__text {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #787878;
+}
+.reviews__link{
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #00A911;
+    transform: translateX(-10px);
+}
+.reviews__link::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 10px;
+    background: url('../images/page/revievs-aroows.svg') no-repeat;
+    top: 7px;
+    right: -3px;
+}
+
+.pagination {
+    max-width: 360px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.pagination .prev,
+.pagination .next{
+    position: relative;
+}
+.pagination .prev{
+    margin-right: 20px;
+}
+.pagination .next{
+    margin-left: 20px;
+}
+.pagination .prev::after,
+.pagination .next::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 30px;
+    left: -7px;
+}
+.pagination .prev::after{
+    background: url('../images/page/page-arrows-left.svg') no-repeat;
+}
+.pagination .next::after{
+    background: url('../images/page/page-arrows-right.svg') no-repeat;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+.current.page-numbers{
+    color: #00A911;
+}
+.page-numbers {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6D6D6D;
+    padding: 0 20px;
+}
+
+
+.review__title {
+    margin-bottom: 82px;
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    color: #202020;
+    text-align: center;
+}
+.review__block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.review__block-content {
+    max-width: 870px;
+}
+.review__block-date {
+    margin-bottom: 21px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #787878;
+}
+.review__block-text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #787878;
+}
